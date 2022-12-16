@@ -1,0 +1,136 @@
+    .row {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .col-hafl {
+        float: left;
+        width: 50%;
+    }
+    
+    /* Log In */
+    body {
+        background-color: #f0f2f5;
+    }
+
+    .header__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .header__wrap span {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .account__wrap {
+        max-width: 930px;
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .center {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .account__img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .account__title {
+        text-transform: none;
+    }
+    
+    .account__img-logo {
+        width: 300px;
+    }
+    
+    .account__contain {
+        max-width: 38rem;
+        background-color: var(--white-color);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        margin: 0 auto;
+        border-radius: 6px;
+    }
+    
+    
+    .group-input {
+        padding: 1rem;
+    }
+    
+    .form-label {
+        font-size: 1.7rem;
+    }
+    
+    .form-control {
+        padding: 1.2rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .btn-confirm {
+        width: 33rem;
+        line-height: 2.2rem;
+        font-size: 1.8rem;
+        padding: 1.2rem;
+    }
+    
+    .account__line {
+        margin: 2.5rem 1.2rem;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .btn-link-register {
+        line-height: 2.2rem;
+        font-size: 1.8rem;
+        padding: 1.4rem;
+    }
+        /* tablet && mobile */
+    @media only screen and (max-width: 600px) {
+        .col-hafl {
+            float: none;
+            width: 100%;
+            margin-top: 36px;
+        }
+
+        .row {
+            flex-direction: column;
+            margin: 36px 0;
+            flex-wrap: nowrap;
+        }
+
+        .account__img {
+            text-align: center;
+        }
+
+        .btn-confirm {
+            width: 28rem;
+        }
+    }
+
+.text-success,
+.text-danger,
+.text-warning {
+    font-size: 2.5rem;
+}
+
+#redict-status {
+    font-size: 1.8rem;
+    display: none;
+}
+
+#redict-status span {
+    font-size: 1.8rem;
+}
